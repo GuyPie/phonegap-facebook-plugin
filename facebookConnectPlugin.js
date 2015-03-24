@@ -8,8 +8,7 @@
  *
  *
  */
-
-if (cordova.platformId == "browser") {
+if (!window.cordova || cordova.platformId == "browser") {
 
     var facebookConnectPlugin = {
 
@@ -173,9 +172,7 @@ if (cordova.platformId == "browser") {
             }
         }
     }());
-
-    module.exports = facebookConnectPlugin;
-
+    
 } else {
 
     var exec = require("cordova/exec");

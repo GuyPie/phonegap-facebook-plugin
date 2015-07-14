@@ -161,7 +161,7 @@ if (!window.cordova || cordova.platformId == "browser") {
         if (!window.FB) {
             console.log("launching FB SDK");
             var e = document.createElement('script');
-            e.src = document.location.protocol + '//connect.facebook.net/en_US/sdk.js';
+            e.src = document.location.protocol + '//connect.facebook.net/en_US/sdk.js#version=v2.3&appId=1398081413801430';
             e.async = true;
             document.getElementById('fb-root').appendChild(e);
             if (!window.FB) {
